@@ -1,0 +1,53 @@
+﻿生成启动时间为 2016/1/6 2:27:26。
+     1>项目“D:\编程\工程\new\合金弹头\合金弹头\合金弹头.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\编程\vs2013\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt GamaeOutput.cpp
+         GamaeOutput.cpp
+     1>d:\编程\工程\new\合金弹头\合金弹头\xiofile.h(25): warning C4996: '_wfopen': This function or variable may be unsafe. Consider using _wfopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\编程\vs2013\VC\include\stdio.h(590) : 参见“_wfopen”的声明
+     1>d:\编程\工程\new\合金弹头\合金弹头\xiofile.h(117): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\编程\vs2013\VC\include\stdio.h(230) : 参见“fscanf”的声明
+     1>GamaeOutput.cpp(120): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\编程\vs2013\VC\include\stdlib.h(575) : 参见“wcstombs”的声明
+     1>GamaeOutput.cpp(151): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\编程\vs2013\VC\include\stdlib.h(528) : 参见“mbstowcs”的声明
+       Link:
+         D:\编程\vs2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\编程\工程\new\合金弹头\Release\合金弹头.exe" /INCREMENTAL:NO /NOLOGO cximagecrtu.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\编程\工程\new\合金弹头\Release\合金弹头.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\编程\工程\new\合金弹头\Release\合金弹头.lib" /MACHINE:X86 /SAFESEH Release\Animation.obj
+         Release\Background.obj
+         Release\BasicData.obj
+         Release\Boom.obj
+         Release\Bullet1.obj
+         Release\Bullet2.obj
+         Release\Bullet3.obj
+         Release\Bullet4.obj
+         Release\BulletMgr.obj
+         Release\EnemyMgr.obj
+         Release\Game.obj
+         Release\GameInput.obj
+         Release\Help.obj
+         Release\Imovable.obj
+         Release\Menu.obj
+         Release\Button.obj
+         Release\GameFrame.obj
+         Release\LOGO.obj
+         Release\Main.obj
+         Release\GamaeOutput.obj
+         Release\Plane.obj
+         Release\role.obj
+         Release\Scene.obj
+         Release\Select.obj
+         Release\Soldier1.obj
+         Release\Soldier2.obj
+         Release\SoundManage.obj
+         Release\Strategy.obj
+         Release\Tank.obj
+         Release\UI.obj
+         正在生成代码
+     1>d:\编程\工程\new\合金弹头\合金弹头\scene.cpp(48): warning C4715: “Scene::LoadUI”: 不是所有的控件路径都返回值
+         已完成代码的生成
+         合金弹头.vcxproj -> D:\编程\工程\new\合金弹头\Release\合金弹头.exe
+     1>已完成生成项目“D:\编程\工程\new\合金弹头\合金弹头\合金弹头.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:02.89

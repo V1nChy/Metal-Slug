@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FF31735F-BE4D-4ECE-8EEB-FFB4CB917FB4}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MetalSlug</RootNamespace>
+    <ProjectName>MetalSlug</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>cximagecrtdu.lib;cximagecrtu.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>cximagecrtu.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="Background.h" />
+    <ClInclude Include="BasicData.h" />
+    <ClInclude Include="Boom.h" />
+    <ClInclude Include="Bullet1.h" />
+    <ClInclude Include="Bullet2.h" />
+    <ClInclude Include="Bullet3.h" />
+    <ClInclude Include="Bullet4.h" />
+    <ClInclude Include="BulletMgr.h" />
+    <ClInclude Include="EnemyMgr.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameInput.h" />
+    <ClInclude Include="Help.h" />
+    <ClInclude Include="Imovable.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="GameFrame.h" />
+    <ClInclude Include="GameOutput.h" />
+    <ClInclude Include="LOGO.h" />
+    <ClInclude Include="Plane.h" />
+    <ClInclude Include="Role.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="Select.h" />
+    <ClInclude Include="Soldier1.h" />
+    <ClInclude Include="Soldier2.h" />
+    <ClInclude Include="sound\SoundManage.h" />
+    <ClInclude Include="Strategy.h" />
+    <ClInclude Include="Tank.h" />
+    <ClInclude Include="UI.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="Background.cpp" />
+    <ClCompile Include="BasicData.cpp" />
+    <ClCompile Include="Boom.cpp" />
+    <ClCompile Include="Bullet1.cpp" />
+    <ClCompile Include="Bullet2.cpp" />
+    <ClCompile Include="Bullet3.cpp" />
+    <ClCompile Include="Bullet4.cpp" />
+    <ClCompile Include="BulletMgr.cpp" />
+    <ClCompile Include="EnemyMgr.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameInput.cpp" />
+    <ClCompile Include="Help.cpp" />
+    <ClCompile Include="Imovable.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="GameFrame.cpp" />
+    <ClCompile Include="LOGO.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="GamaeOutput.cpp" />
+    <ClCompile Include="Plane.cpp" />
+    <ClCompile Include="role.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="Select.cpp" />
+    <ClCompile Include="Soldier1.cpp" />
+    <ClCompile Include="Soldier2.cpp" />
+    <ClCompile Include="sound\SoundManage.cpp" />
+    <ClCompile Include="Strategy.cpp" />
+    <ClCompile Include="Tank.cpp" />
+    <ClCompile Include="UI.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
